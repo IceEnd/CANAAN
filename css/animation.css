@@ -1,0 +1,136 @@
+.head_img{
+    -webkit-animation: headneon 1.5s ease-in-out infinite alternate;
+    -moz-animation: headneon 1.5s ease-in-out infinite alternate;
+    animation: headneon 1.5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes headneon {
+    from {
+        box-shadow: 0 0 1px #fff,
+                    0 0 2px #fff,
+                    0 0 3px #fff,
+                    0 0 4px #fff;
+    }
+    to {
+        box-shadow: 0 0 5px #fff,
+                    0 0 10px #fff,
+                    0 0 15px #fff,
+                    0 0 20px #fff;
+    }
+}
+
+@-moz-keyframes headneon {
+    from {
+        box-shadow: 0 0 1px #fff,
+                    0 0 2px #fff,
+                    0 0 3px #fff,
+                    0 0 4px #fff;
+    }
+    to {
+        box-shadow: 0 0 5px #fff,
+                    0 0 10px #fff,
+                    0 0 15px #fff,
+                    0 0 20px #fff;
+    }
+}
+
+.green_cycle_img{
+    animation-name: clockwise;
+    animation-duration:1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+
+    /*safari & Chrome */
+    -webkit-animation-name:clockwise;
+    -webkit-animation-duration:1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+}
+
+.yellow_cycle_img{
+    animation-name: anticlockwise;
+    animation-duration:1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+
+    /*safari & Chrome */
+    -webkit-animation-name:anticlockwise;
+    -webkit-animation-duration:1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+}
+
+.blue_cycle_img{
+    animation-name: clockwise;
+    animation-duration:1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+
+    /*safari & Chrome */
+    -webkit-animation-name:clockwise;
+    -webkit-animation-duration:1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+}
+
+@keyframes clockwise{
+    from {
+        -webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes clockwise{
+    from {
+        -webkit-transform:rotate(0deg);
+    }
+    to {
+        -webkit-transform:rotate(360deg);
+    }
+}
+
+@keyframes anticlockwise{
+    from {
+        -webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform:rotate(-360deg);
+        -moz-transform:rotate(-360deg);
+        -ms-transform: rotate(-360deg);
+        -o-transform: rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes anticlockwise{
+    from {
+        -webkit-transform:rotate(0deg);
+    }
+    to {
+        -webkit-transform:rotate(-360deg);
+    }
+}
+
+
+#cmt .avatar img:hover{
+    -webkit-animation: anticlockwise 0.5s linear 1;
+    -moz-animation: anticlockwise 0.5s linear 1;
+    animation: anticlockwise 0.5s linear 1;
+}
+
