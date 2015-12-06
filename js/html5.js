@@ -169,10 +169,10 @@ $(function(){
     }
 
     function touchEnd(event){
-        if(endX - startX > 200){
+        if(endX - startX > 160){
             menuOut();
         }
-        else if(endX - startX < 200){
+        else if(endX - startX < 160){
             menuIn();
         }
     }
