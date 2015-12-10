@@ -24,29 +24,39 @@ $(function(){
     var icon_2 = $('.sina_a');
     var g_i = 0;
     var s_i = 320;
+    var a_hover = false;
     function aMove(){
-        if(g_i <= 640){
-            icon_1.css({'left':x_arr[g_i]+'px','top':y_arr[g_i]+'px'});
-            g_i++;
-        }
-        else{
-            g_i = 1;
-            icon_1.css({'left':x_arr[g_i]+'px','top':y_arr[g_i]+'px'});
-            g_i++;
+        if(!a_hover){
+            if(g_i <= 640){
+                icon_1.css({'left':x_arr[g_i]+'px','top':y_arr[g_i]+'px'});
+                g_i++;
+            }
+            else{
+                g_i = 1;
+                icon_1.css({'left':x_arr[g_i]+'px','top':y_arr[g_i]+'px'});
+                g_i++;
+            }
+        
+            if(s_i <= 640){
+                icon_2.css({'left':x_arr[s_i]+'px','top':y_arr[s_i]+'px'});
+                s_i++;
+            }else{
+                s_i = 1;
+                icon_2.css({'left':x_arr[s_i]+'px','top':y_arr[s_i]+'px'});
+                s_i++;
+            }    
         }
         
-        if(s_i <= 640){
-            icon_2.css({'left':x_arr[s_i]+'px','top':y_arr[s_i]+'px'});
-            s_i++;
-        }else{
-             s_i = 1;
-             icon_2.css({'left':x_arr[s_i]+'px','top':y_arr[s_i]+'px'});
-             s_i++;
-        }
     }
     
     aMove();
     var gitTimer=setInterval(aMove,8);
+    
+    $('.cycle_div').hover(function(){
+        a_hover = true;
+    },function(){
+        a_hover = false;
+    });
     
     var flag = true;
     $(document).mousemove(function(e){
