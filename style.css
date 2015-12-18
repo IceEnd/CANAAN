@@ -390,6 +390,10 @@ article img , article .wp-caption {
     background: #DADADA;
 }
 
+body .single_page{
+    background: #FFFFFF;
+}
+
 .p_content,#sidebar{
     max-width: 1170px;
     width: 80%;

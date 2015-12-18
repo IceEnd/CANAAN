@@ -110,5 +110,3 @@
 		</form>
 	</div>
 </nav>
-
-<div id="page" class="page">

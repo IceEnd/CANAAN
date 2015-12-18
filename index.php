@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<div id="page" class="page">
 <section id="content" class="p_content">
 <ul id="article_ctn">
 <?php if ( have_posts() ) : ?>
