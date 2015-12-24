@@ -83,6 +83,7 @@ $(function(){
             t = t - s_top;
             if((t-h) < -200){
                 art_li[i].style.left = '0';
+                console.log(h);
              }
         }
     }
@@ -97,7 +98,9 @@ $(function(){
                 s_top=document.body.scrollTop;
                 t = art_li[i].offsetTop;
                 t = t - s_top;
+                //console.log('sss');
                 if((t-h) < -200){
+                    //console.log('ssss');
                     art_li[i].style.left = '0';
                 }
             }
@@ -107,9 +110,7 @@ $(function(){
                 s_top=document.documentElement.scrollTop;
                 t = art_li[i].offsetTop;
                 t = t - s_top;
-                console.log('sssss t:' +t +' h:' + h + ' s_top:'+s_top);
-                if((t-h) < -200){
-                    
+                if((t-h) < -200){ 
                     art_li[i].style.left = '0';
                 }
             }
@@ -126,14 +127,15 @@ $(function(){
     $(window).bind("scroll", function(){ 
             //当滚动条滚动时
             h = window.innerHeight;
-            for(i in art_li){
-                s_top=document.body.scrollTop;
+            for(i in art_li){             
+                s_top=$(document).scrollTop();
                 t = art_li[i].offsetTop;
-                t = t - s_top;
+                t = t - s_top; 
+                console.log(s_top);
                 if((t-h) < -200){
                     art_li[i].style.left = '0';
                 }
-            }
+        }
     }); 
     
     //菜单弹出
