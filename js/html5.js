@@ -83,7 +83,6 @@ $(function(){
             t = t - s_top;
             if((t-h) < -200){
                 art_li[i].style.left = '0';
-                console.log(h);
              }
         }
     }
@@ -98,9 +97,7 @@ $(function(){
                 s_top=document.body.scrollTop;
                 t = art_li[i].offsetTop;
                 t = t - s_top;
-                //console.log('sss');
                 if((t-h) < -200){
-                    //console.log('ssss');
                     art_li[i].style.left = '0';
                 }
             }
@@ -131,7 +128,6 @@ $(function(){
                 s_top=$(document).scrollTop();
                 t = art_li[i].offsetTop;
                 t = t - s_top; 
-                console.log(s_top);
                 if((t-h) < -200){
                     art_li[i].style.left = '0';
                 }
