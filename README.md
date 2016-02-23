@@ -1,4 +1,4 @@
-<h1>niconiconi</h1>
+<h1>CANNAN</h1>
 <h2>Ver 1.0.0</h2>
 
 ### 功能特点
