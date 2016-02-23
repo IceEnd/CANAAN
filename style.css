@@ -1,12 +1,12 @@
 /*
 Theme Name:CANAAN
-Theme URI:http://www.coolecho.net/?p=414
+Theme URI:http://blog.coolecho.net/2015/12/canaan.html
 Author:Cononico
 Author URI:http://coolecho.net
 Description:Time axis Theme CANAAN
-Version:1.0.0
+Version:1.0.2
 Tags:Cononico,CANAAN,Time axis
-Text Domain:niconiconi
+Text Domain:canaan
 */
 
 /*common*/
@@ -388,6 +388,10 @@ article img , article .wp-caption {
 .page{
     padding-top: 50px;
     background: #DADADA;
+}
+
+body .single_page{
+    background: #f7f7f7;
 }
 
 .p_content,#sidebar{
@@ -785,6 +789,10 @@ article img , article .wp-caption {
     width: 80%;
     margin: 50px auto;
     max-width: 1170px;
+	background-color:#FFFFFF;
+	padding:20px;
+	border-radius:5px;
+	
 }
 
 /* 文章页面 */
