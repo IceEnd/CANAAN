@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<div id="page" class="page">
 <section id="content" class="page_content">
 
 <?php the_post(); ?>

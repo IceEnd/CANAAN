@@ -1,10 +1,8 @@
 <?php get_header(); ?>
-
+<div id="page" class="page single_page">
 <div class="charector-wrap " id="js_wrap">
     <div class="charector"></div>
 </div>
-<script src="<?php bloginfo('template_url');?>/js/jquery-1.7.2.min.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_url');?>/js/jump.js" type="text/javascript"></script>
 
 <section id="s_content" class="single">
 
@@ -42,6 +40,7 @@
 	<?php the_content(); ?>
 
 </div>
+
 <nav class="post_nav">
     <?php
         $prev_post = get_previous_post();
@@ -58,20 +57,6 @@
 </nav>
 
 </article>
-    
-<!-- 这里可以插入广告 -->
-<div style=”float:right; padding-bottom:10px;padding-top:10px;width:70%”>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- 小广告I -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4184837872359054"
-     data-ad-slot="7288537529"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</div>
 
 <?php comments_template( '', true ); ?>
 
