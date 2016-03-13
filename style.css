@@ -2,7 +2,7 @@
 Theme Name:CANAAN
 Theme URI:http://blog.coolecho.net/2015/12/canaan.html
 Author:Cononico
-Author URI:https://blog.coolecho.net
+Author URI:http://coolecho.net
 Description:Time axis Theme CANAAN
 Version:1.0.2
 Tags:Cononico,CANAAN,Time axis
@@ -293,7 +293,7 @@ article img , article .wp-caption {
 }
 
 .head_nav li:hover{
-    background-color: #2f7779;
+    background-color: #503F3F;
 }
 
 .head_main li a{
@@ -391,17 +391,22 @@ article img , article .wp-caption {
 }
 
 body .single_page{
-<<<<<<< HEAD
     background: #f7f7f7;
-=======
-    background: #FFFFFF;
->>>>>>> cf6d003cf21547ae9abe5bbf5dfafa71767abe9c
 }
 
 .p_content,#sidebar{
     max-width: 1170px;
     width: 80%;
     margin: 0 auto;
+}
+
+#sidebar{
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.single_page #sidebar{
+    padding: 20px;
 }
 
 .artic_li{
@@ -679,7 +684,7 @@ body .single_page{
     padding: 25px 0;
 }
 
-#page_nav span{
+#page_nav .current{
     display: inline-block;
     color: aliceblue;
     width: 26px;
@@ -691,7 +696,7 @@ body .single_page{
     border: solid 3px rgb(219, 169, 169);
 }
 
-#page_nav a{
+#page_nav a,#page_nav .dots{
     display: inline-block;
     color: white;
     width: 20px;
@@ -708,13 +713,11 @@ body .single_page{
 }
 
 .sidebar_sect{
-    padding: 20px 0 50px 0;
+    padding: 20px 0 60px 0;
 }
 
 .sidebar_sect .widgets{
-    float: left;
-    padding: 10px;
-    box-sizing: border-box;
+    padding: 5px 15px;
 }
 
 .footer{
@@ -1130,6 +1133,15 @@ body .single_page{
 
 .menu_button{
     display: none;
+}
+
+/*工具*/
+.widgets h3{
+    color: burlywood;
+}
+
+.widgets .tagcloud a{
+    display: inline-block;
 }
 
 /* Mobile 700px<width<1170px */
