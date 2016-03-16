@@ -134,3 +134,9 @@
     animation: anticlockwise 0.5s linear 1;
 }
 
+#cmt .avatar img{
+    -webkit-animation: clockwise 0.5s linear 1;
+    -moz-animation: clockwise 0.5s linear 1;
+    animation: clockwise 0.5s linear 1;
+}
+

@@ -83,6 +83,7 @@ $(function(){
             t = t - s_top;
             if((t-h) < -200){
                 art_li[i].style.left = '0';
+                console.log(h);
              }
         }
     }
@@ -132,7 +133,20 @@ $(function(){
                     art_li[i].style.left = '0';
                 }
         }
+        if($(document).scrollTop() >= 300){
+            $('#totop').fadeIn(500);
+        }
+        else{
+            $('#totop').fadeOut(500);
+        }
     }); 
+    
+    $('#totop').on('click',function(event){
+        event.preventDefault();
+        $('body,html').animate({
+            scrollTop: 0,
+        },800);
+    });
     
     //菜单弹出
     var menu_none = true;
@@ -185,12 +199,12 @@ $(function(){
         }
     }
     
-     $('.img_div').hover(function(){
-        $(this).children('.title_bg').stop(true,false).animate({'bottom':'0'},300); 
-        $(this).children('.art_title').stop(true,false).animate({'bottom':'0'},300); 
-    },function(){
-        $(this).children('.title_bg').stop(true,false).animate({'bottom':'-55px'},300); 
-        $(this).children('.art_title').stop(true,false).animate({'bottom':'-55px'},300);
-    });
+    //  $('.img_div').hover(function(){
+    //     $(this).children('.title_bg').stop(true,false).animate({'bottom':'0'},300); 
+    //     $(this).children('.art_title').stop(true,false).animate({'bottom':'0'},300); 
+    // },function(){
+    //     $(this).children('.title_bg').stop(true,false).animate({'bottom':'-55px'},300); 
+    //     $(this).children('.art_title').stop(true,false).animate({'bottom':'-55px'},300);
+    // });
 });
 

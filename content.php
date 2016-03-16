@@ -22,10 +22,9 @@
                 <?php } else{ ?>
                     <img src="<?php bloginfo('template_url');?>/images/upload/bg_one.jpg">
                 <?php } ?>
-                <span class="title_bg"></span>
-                <div class="art_title">    
-                        <h1><?php the_title(); ?></h1>
-                </div>
+                <span class="title_bg"></span>  
+                <h1 class="art_title"><?php the_title(); ?></h1>
+                <h2 class="art_author">Author : <?php the_author(); ?></h2>
             </div>
             </a>
             

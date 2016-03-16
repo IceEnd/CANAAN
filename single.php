@@ -40,6 +40,17 @@
 	<?php the_content(); ?>
 
 </div>
+<!--谷歌广告 -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 小广告I -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4184837872359054"
+     data-ad-slot="7288537529"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <nav class="post_nav">
     <?php
@@ -57,9 +68,11 @@
 </nav>
 
 </article>
+<!-- 这里可以插入广告 -->
 
-<?php comments_template( '', true ); ?>
+
 
 </section>
+<?php comments_template( '', true ); ?>
 
 <?php get_footer(); ?>
