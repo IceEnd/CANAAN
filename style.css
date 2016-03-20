@@ -974,7 +974,7 @@ body .single_page{
 	margin: 10px auto;
     font-size: 15px;
     width: 80%;
-    padding: 20px;
+    padding: 0 20px;
     background-color: #ffffff;
     border-radius: 5px;
     overflow: hidden;

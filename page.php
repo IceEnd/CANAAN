@@ -25,8 +25,9 @@
 
 </article>
 
-<?php comments_template( '', true ); ?>
+
 
 </section>
+<?php comments_template( '', true ); ?>
 
 <?php get_footer(); ?>
